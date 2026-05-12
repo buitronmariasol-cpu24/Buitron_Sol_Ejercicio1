@@ -3,11 +3,16 @@
 int main()
 {
     int arreglo[]={2, 4, 6, 8, 10};
-    int tam = 5;
+    int *ptr;
 
-    for (int i = 0; i < tam; i++) 
+    ptr = &arreglo[0];
+    
+
+    for (int i = 0; i < 5; i++) 
     {
-        printf("%d", arreglo[i]);
+        printf("arreglo[%d] =%d ",i, arreglo[i]);
+        ptr = &arreglo[i];
+        printf("%d\n", *ptr);
     }
 
     return 0;
