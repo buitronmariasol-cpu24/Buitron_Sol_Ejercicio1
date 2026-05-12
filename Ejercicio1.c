@@ -10,7 +10,7 @@ int main()
 
     for (int i = 0; i < 5; i++) 
     {
-        printf("arreglo[%d] =%d\t",i, arreglo[i]);
+        printf("arreglo[%d] =%d ",i, arreglo[i]);
         //ptr = &arreglo[i];
         printf("%d\n", *(ptr++));
     }
